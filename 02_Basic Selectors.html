@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("button").click(() => {
+          $("a[target]").css("background", "red");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="5" class="first">Paragraph in body</p>
+    <span id="5" class="first">First single span</span>
+    <p class="second">Paragraph in body2</p>
+    <div>
+      <p>Paragraph in div</p>
+      <span>Span in div</span>
+      <ul>
+        <li><span>span in li</span></li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+    <div>
+      <table border="5">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+      </table>
+    </div>
+    <a href="#">First</a><br /><a href="#" target="_blank">Target</a>
+    <div>
+      <p>oops</p>
+      <span>third span</span>
+    </div>
+    <button>Italic style</button>
+  </body>
+</html>
