@@ -6,41 +6,14 @@
     <title>Basic Selectors</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
-  <style>
-    .class_1 {
-      color: blue;
-    }
-    .class_2 {
-      color: red;
-    }
-  </style>
+  <style></style>
   <script>
     $("document").ready(() => {
-      let paragraph = $("p");
-      let btn1 = $(".first").on("click", () => {
-        paragraph.removeClass("class_2");
-        paragraph.addClass("class_1");
-      });
-      let btn2 = $(".second").on("click", () => {
-        paragraph.removeClass("class_1");
-        paragraph.addClass("class_2");
-      });
-    });
-    let btn3 = $(".input").on("click", () => {
-      console.log("works");
-      paragraph.removeClass("class_1");
+      $("input:disabled").val("Holla");
     });
   </script>
   <body>
-    <button class="first">First</button>
-    <button class="second">Second</button>
-    <input class="input" type="button" value="Input" />
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perspiciatis
-      quisquam voluptatem omnis accusantium doloribus at commodi voluptas, amet
-      fugiat facere numquam ratione quaerat, doloremque deleniti fuga nemo,
-      voluptates eius.
-    </p>
+    <input type="text" disabled />
+    <input type="text" />
   </body>
 </html>
